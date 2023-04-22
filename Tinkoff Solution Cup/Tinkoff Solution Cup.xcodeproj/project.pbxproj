@@ -22,6 +22,8 @@
 		35C4339A29F3F4900048D4E0 /* LabelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339929F3F4900048D4E0 /* LabelCollection.swift */; };
 		35C4339D29F3F5EA0048D4E0 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339C29F3F5EA0048D4E0 /* Button.swift */; };
 		35C4339F29F4034C0048D4E0 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339E29F4034C0048D4E0 /* Widget.swift */; };
+		35C433C129F415560048D4E0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C433C029F415560048D4E0 /* Item.swift */; };
+		35C433C329F41BA70048D4E0 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C433C229F41BA70048D4E0 /* Table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		35C4339929F3F4900048D4E0 /* LabelCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollection.swift; sourceTree = "<group>"; };
 		35C4339C29F3F5EA0048D4E0 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		35C4339E29F4034C0048D4E0 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		35C433C029F415560048D4E0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		35C433C229F41BA70048D4E0 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				35C4339129F3F3280048D4E0 /* labelItem.swift */,
+				35C433C029F415560048D4E0 /* Item.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				35C4339629F3F40E0048D4E0 /* LabelTable.swift */,
+				35C433C229F41BA70048D4E0 /* Table.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -306,6 +312,8 @@
 				35C4337D29F3DC0C0048D4E0 /* View.swift in Sources */,
 				35C4339A29F3F4900048D4E0 /* LabelCollection.swift in Sources */,
 				35C4339D29F3F5EA0048D4E0 /* Button.swift in Sources */,
+				35C433C129F415560048D4E0 /* Item.swift in Sources */,
+				35C433C329F41BA70048D4E0 /* Table.swift in Sources */,
 				35C4336629F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc in Sources */,
 				35C4339429F3F39F0048D4E0 /* UIFont+Extension.swift in Sources */,
 				35C4338629F3DEEF0048D4E0 /* Token.swift in Sources */,

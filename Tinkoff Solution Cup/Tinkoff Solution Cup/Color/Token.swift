@@ -43,6 +43,7 @@ extension Token {
         
         static let button = Token.button
         static let buttonSelected = Token.selectedButton
+        static let buttonDelete = Token.selectedView
         
         static let view = Token.view
         static let selectedView = Token.selectedView

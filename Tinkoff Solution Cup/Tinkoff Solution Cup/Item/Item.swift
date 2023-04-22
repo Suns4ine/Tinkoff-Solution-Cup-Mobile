@@ -1,5 +1,5 @@
 //
-//  Widget.swift
+//  Item.swift
 //  Tinkoff Solution Cup
 //
 //  Created by Vyacheslav Pronin on 22.04.2023.
@@ -7,7 +7,11 @@
 
 import UIKit
 
-public final class Widget: UIView {
+public final class Item: UIView {
+    
+    public private(set) var isCanDelete = false
+    
+    private var closure: (() -> (Void))?
     
     public var isHighlighted = false {
         didSet {
@@ -30,8 +34,12 @@ public final class Widget: UIView {
         return image
     }()
     
-    public let button: Button = {
-        let button = Button(text: "", closure: nil)
+    private let deleteButton: UIButton = {
+        let button = UIButton()
+        button.isHidden = true
+        button.layer.cornerRadius = Item.Constant.cornerRadius/2
+        button.backgroundColor = Token.Color.buttonDelete
+        button.setImage(UIImage(systemName: "Close"), for: .normal)
         return button
     }()
     
@@ -40,7 +48,7 @@ public final class Widget: UIView {
         view.backgroundColor = .clear
         view.distribution = .fillEqually
         view.axis = .horizontal
-        view.spacing = Widget.Constant.textStack
+        view.spacing = Item.Constant.textStack
         return view
      }()
     
@@ -49,25 +57,15 @@ public final class Widget: UIView {
         view.backgroundColor = .clear
         view.distribution = .fillEqually
         view.axis = .horizontal
-        view.spacing = Widget.Constant.horizontal
-        return view
-    }()
-    
-    private let verticalStackView: UIStackView = {
-        let view = UIStackView()
-        view.backgroundColor = .clear
-        view.distribution = .fillEqually
-        view.axis = .vertical
-        view.spacing = Widget.Constant.vertical
-        view.layer.cornerRadius = Widget.Constant.cornerRadius
+        view.spacing = Item.Constant.horizontal
         return view
     }()
     
     init(title: String = "",
          subtitle: String = "",
-         buttonTitle: String = "",
          image: Image.Name,
-         closure: (()->())? = nil) {
+         isCanDelete: Bool = false,
+         deleteClosure: (()->())? = nil) {
         
         super.init(frame: .zero)
         
@@ -75,16 +73,14 @@ public final class Widget: UIView {
         self.subtitle.text = subtitle
         
         self.image.name = image
-        
-        button.label.text = buttonTitle
-        button.closure = closure
-        
+
+        closure = deleteClosure
         setup()
         update()
     }
     
     private func setup() {
-        [textStackView, horizontalStackView, verticalStackView].forEach {
+        [textStackView, horizontalStackView, deleteButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
         }
@@ -93,16 +89,17 @@ public final class Widget: UIView {
             textStackView.addArrangedSubview($0)
         }
         
-        [textStackView, image].forEach {
+        [image, textStackView].forEach {
             horizontalStackView.addArrangedSubview($0)
         }
         
-        [horizontalStackView, button].forEach {
-            verticalStackView.addArrangedSubview($0)
-        }
-        
-        self.layer.cornerRadius = Widget.Constant.cornerRadius
+        self.layer.cornerRadius = Item.Constant.cornerRadius
         self.translatesAutoresizingMaskIntoConstraints = false
+        
+        if isCanDelete {
+            deleteButton.isHidden = false
+            deleteButton.addTarget(self, action: #selector(tapDeleteButton), for: .touchUpInside)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -123,18 +120,30 @@ public final class Widget: UIView {
     
     private func addConstraints() {
         NSLayoutConstraint.activate([
-            verticalStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: Widget.Constant.vertical + 4),
-            verticalStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Widget.Constant.indent),
-            verticalStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Widget.Constant.horizontal),
-            verticalStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Widget.Constant.indent)
+            horizontalStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: Item.Constant.vertical),
+            horizontalStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Item.Constant.indent),
+            horizontalStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Item.Constant.horizontal),
+            horizontalStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Item.Constant.indent)
         ])
+        
+        if isCanDelete {
+            NSLayoutConstraint.activate([
+                deleteButton.topAnchor.constraint(equalTo: self.topAnchor, constant: Item.Constant.vertical),
+                deleteButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Item.Constant.horizontal)
+            ])
+        }
+    }
+    
+    @objc
+    private func tapDeleteButton() {
+        closure?()
     }
 }
 
 
-private extension Widget {
+private extension Item {
     enum Constant {
-        static let vertical: CGFloat = 12
+        static let vertical: CGFloat = 16
         static let horizontal: CGFloat = 16
         static let indent: CGFloat = 20
         

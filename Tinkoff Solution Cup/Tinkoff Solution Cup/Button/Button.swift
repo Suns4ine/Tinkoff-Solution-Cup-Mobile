@@ -14,6 +14,7 @@ public class Button: UIButton {
     
     let label: Label = {
         let label = Label(text: "", style: .button)
+        label.textAlignment = .center
         return label
     }()
     
@@ -71,6 +72,6 @@ public class Button: UIButton {
 private extension Button {
     enum Constant {
         static let horizontal: CGFloat = 8
-        static let vertical: CGFloat = 3
+        static let vertical: CGFloat = 10
     }
 }
