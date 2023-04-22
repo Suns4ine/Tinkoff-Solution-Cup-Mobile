@@ -17,7 +17,6 @@
 		35C4338A29F3E2B40048D4E0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4338929F3E2B40048D4E0 /* Image.swift */; };
 		35C4338F29F3F1C80048D4E0 /* LabelWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4338E29F3F1C80048D4E0 /* LabelWidget.swift */; };
 		35C4339229F3F3280048D4E0 /* labelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339129F3F3280048D4E0 /* labelItem.swift */; };
-		35C4339429F3F39F0048D4E0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */; };
 		35C4339729F3F40E0048D4E0 /* LabelTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339629F3F40E0048D4E0 /* LabelTable.swift */; };
 		35C4339A29F3F4900048D4E0 /* LabelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339929F3F4900048D4E0 /* LabelCollection.swift */; };
 		35C4339D29F3F5EA0048D4E0 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339C29F3F5EA0048D4E0 /* Button.swift */; };
@@ -50,7 +49,6 @@
 		35C4338929F3E2B40048D4E0 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		35C4338E29F3F1C80048D4E0 /* LabelWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWidget.swift; sourceTree = "<group>"; };
 		35C4339129F3F3280048D4E0 /* labelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelItem.swift; sourceTree = "<group>"; };
-		35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		35C4339629F3F40E0048D4E0 /* LabelTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTable.swift; sourceTree = "<group>"; };
 		35C4339929F3F4900048D4E0 /* LabelCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollection.swift; sourceTree = "<group>"; };
 		35C4339C29F3F5EA0048D4E0 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				35C4337B29F3DC010048D4E0 /* View */,
 				35C4336429F3DACE0048D4E0 /* Tinkoff_Solution_Cup.h */,
 				35C4336529F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc */,
-				35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */,
 			);
 			path = "Tinkoff Solution Cup";
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				35C433C129F415560048D4E0 /* Item.swift in Sources */,
 				35C433C329F41BA70048D4E0 /* Table.swift in Sources */,
 				35C4336629F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc in Sources */,
-				35C4339429F3F39F0048D4E0 /* UIFont+Extension.swift in Sources */,
 				35C4338629F3DEEF0048D4E0 /* Token.swift in Sources */,
 				35C4338029F3DCE40048D4E0 /* Label.swift in Sources */,
 				35C4339F29F4034C0048D4E0 /* Widget.swift in Sources */,
@@ -482,6 +478,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,6 +507,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
