@@ -19,7 +19,7 @@ public final class Collection: UIView {
         }
     }
     
-    private var items = [Item]()
+    private var cells = [Cell]()
     
     public let title: LabelWidget = {
         let label = LabelWidget(text: "", style: .title)
@@ -76,7 +76,7 @@ public final class Collection: UIView {
     }()
     
     init(title: String = "",
-         items: [Item],
+         cells: [Cell],
          headerClosure: (()->())? = nil,
          closure: (()->())? = nil) {
         
@@ -84,7 +84,7 @@ public final class Collection: UIView {
         
         self.title.text = title
 
-        self.items = items
+        self.cells = cells
         
         self.headerClosure = headerClosure
         buttonClosure = closure
@@ -99,7 +99,7 @@ public final class Collection: UIView {
         
         var views: [UIView] = [horizontalStackView]
         
-        items.forEach {
+        cells.forEach {
             horizontalItemsStackView.addArrangedSubview($0)
         }
         
@@ -141,10 +141,6 @@ public final class Collection: UIView {
             self.layer.shadowOpacity = 1
             self.layer.shadowOffset = CGSize.zero
             self.layer.shadowColor = Token.Color.shadowView.cgColor
-        }
-        
-        items.forEach {
-            $0.isHighlighted = isHighlighted
         }
     }
     

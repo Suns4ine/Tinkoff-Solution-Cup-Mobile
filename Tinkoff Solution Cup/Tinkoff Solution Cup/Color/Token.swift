@@ -30,7 +30,7 @@ class Token {
     
     private static let backgroundImage = UIColor(hex: 0x428BF9)
     
-    
+    private static let backgroundCell = UIColor(hex: 0x001024)
 }
 
 extension Token {
@@ -48,6 +48,7 @@ extension Token {
         static let view = Token.view
         static let selectedView = Token.selectedView
         static let shadowView = Token.selectedView
+        static let backgroundCell = Token.backgroundCell
     }
 }
 
