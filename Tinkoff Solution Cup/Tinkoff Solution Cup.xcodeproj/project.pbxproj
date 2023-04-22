@@ -11,6 +11,17 @@
 		35C4336C29F3DACE0048D4E0 /* Tinkoff_Solution_Cup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C4336129F3DACE0048D4E0 /* Tinkoff_Solution_Cup.framework */; };
 		35C4337129F3DACE0048D4E0 /* Tinkoff_Solution_CupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4337029F3DACE0048D4E0 /* Tinkoff_Solution_CupTests.swift */; };
 		35C4337229F3DACE0048D4E0 /* Tinkoff_Solution_Cup.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C4336429F3DACE0048D4E0 /* Tinkoff_Solution_Cup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35C4337D29F3DC0C0048D4E0 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4337C29F3DC0C0048D4E0 /* View.swift */; };
+		35C4338029F3DCE40048D4E0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4337F29F3DCE40048D4E0 /* Label.swift */; };
+		35C4338629F3DEEF0048D4E0 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4338529F3DEEF0048D4E0 /* Token.swift */; };
+		35C4338A29F3E2B40048D4E0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4338929F3E2B40048D4E0 /* Image.swift */; };
+		35C4338F29F3F1C80048D4E0 /* LabelWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4338E29F3F1C80048D4E0 /* LabelWidget.swift */; };
+		35C4339229F3F3280048D4E0 /* labelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339129F3F3280048D4E0 /* labelItem.swift */; };
+		35C4339429F3F39F0048D4E0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */; };
+		35C4339729F3F40E0048D4E0 /* LabelTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339629F3F40E0048D4E0 /* LabelTable.swift */; };
+		35C4339A29F3F4900048D4E0 /* LabelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339929F3F4900048D4E0 /* LabelCollection.swift */; };
+		35C4339D29F3F5EA0048D4E0 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339C29F3F5EA0048D4E0 /* Button.swift */; };
+		35C4339F29F4034C0048D4E0 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4339E29F4034C0048D4E0 /* Widget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +40,17 @@
 		35C4336529F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Tinkoff_Solution_Cup.docc; sourceTree = "<group>"; };
 		35C4336B29F3DACE0048D4E0 /* Tinkoff Solution CupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tinkoff Solution CupTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C4337029F3DACE0048D4E0 /* Tinkoff_Solution_CupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinkoff_Solution_CupTests.swift; sourceTree = "<group>"; };
+		35C4337C29F3DC0C0048D4E0 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		35C4337F29F3DCE40048D4E0 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		35C4338529F3DEEF0048D4E0 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		35C4338929F3E2B40048D4E0 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		35C4338E29F3F1C80048D4E0 /* LabelWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWidget.swift; sourceTree = "<group>"; };
+		35C4339129F3F3280048D4E0 /* labelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelItem.swift; sourceTree = "<group>"; };
+		35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		35C4339629F3F40E0048D4E0 /* LabelTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTable.swift; sourceTree = "<group>"; };
+		35C4339929F3F4900048D4E0 /* LabelCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollection.swift; sourceTree = "<group>"; };
+		35C4339C29F3F5EA0048D4E0 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		35C4339E29F4034C0048D4E0 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +93,18 @@
 		35C4336329F3DACE0048D4E0 /* Tinkoff Solution Cup */ = {
 			isa = PBXGroup;
 			children = (
+				35C4339B29F3F5D30048D4E0 /* Button */,
+				35C4339829F3F46F0048D4E0 /* LabelCollection */,
+				35C4339529F3F3FE0048D4E0 /* Table */,
+				35C4339029F3F3170048D4E0 /* Item */,
+				35C4338B29F3E9E10048D4E0 /* Image */,
+				35C4338429F3DEAB0048D4E0 /* Color */,
+				35C4338129F3DDDE0048D4E0 /* Widget */,
+				35C4337E29F3DCD50048D4E0 /* Label */,
+				35C4337B29F3DC010048D4E0 /* View */,
 				35C4336429F3DACE0048D4E0 /* Tinkoff_Solution_Cup.h */,
 				35C4336529F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc */,
+				35C4339329F3F39F0048D4E0 /* UIFont+Extension.swift */,
 			);
 			path = "Tinkoff Solution Cup";
 			sourceTree = "<group>";
@@ -83,6 +115,79 @@
 				35C4337029F3DACE0048D4E0 /* Tinkoff_Solution_CupTests.swift */,
 			);
 			path = "Tinkoff Solution CupTests";
+			sourceTree = "<group>";
+		};
+		35C4337B29F3DC010048D4E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35C4337C29F3DC0C0048D4E0 /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35C4337E29F3DCD50048D4E0 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				35C4337F29F3DCE40048D4E0 /* Label.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		35C4338129F3DDDE0048D4E0 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				35C4338E29F3F1C80048D4E0 /* LabelWidget.swift */,
+				35C4339E29F4034C0048D4E0 /* Widget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		35C4338429F3DEAB0048D4E0 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				35C4338529F3DEEF0048D4E0 /* Token.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		35C4338B29F3E9E10048D4E0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				35C4338929F3E2B40048D4E0 /* Image.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		35C4339029F3F3170048D4E0 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				35C4339129F3F3280048D4E0 /* labelItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		35C4339529F3F3FE0048D4E0 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				35C4339629F3F40E0048D4E0 /* LabelTable.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		35C4339829F3F46F0048D4E0 /* LabelCollection */ = {
+			isa = PBXGroup;
+			children = (
+				35C4339929F3F4900048D4E0 /* LabelCollection.swift */,
+			);
+			path = LabelCollection;
+			sourceTree = "<group>";
+		};
+		35C4339B29F3F5D30048D4E0 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				35C4339C29F3F5EA0048D4E0 /* Button.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +299,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C4339729F3F40E0048D4E0 /* LabelTable.swift in Sources */,
+				35C4339229F3F3280048D4E0 /* labelItem.swift in Sources */,
+				35C4338A29F3E2B40048D4E0 /* Image.swift in Sources */,
+				35C4338F29F3F1C80048D4E0 /* LabelWidget.swift in Sources */,
+				35C4337D29F3DC0C0048D4E0 /* View.swift in Sources */,
+				35C4339A29F3F4900048D4E0 /* LabelCollection.swift in Sources */,
+				35C4339D29F3F5EA0048D4E0 /* Button.swift in Sources */,
 				35C4336629F3DACE0048D4E0 /* Tinkoff_Solution_Cup.docc in Sources */,
+				35C4339429F3F39F0048D4E0 /* UIFont+Extension.swift in Sources */,
+				35C4338629F3DEEF0048D4E0 /* Token.swift in Sources */,
+				35C4338029F3DCE40048D4E0 /* Label.swift in Sources */,
+				35C4339F29F4034C0048D4E0 /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +512,7 @@
 		35C4337929F3DACE0048D4E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QZA5Q28CH8;
@@ -412,6 +529,7 @@
 		35C4337A29F3DACE0048D4E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QZA5Q28CH8;
